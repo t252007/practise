@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Event Registration Form</h2>
+
+<form id="myForm">
+
+    Full Name:
+    <input type="text" id="name">
+    <span id="nameError"></span><br>
+
+    Email Address:
+    <input type="text" id="email">
+    <span id="emailError"></span><br>
+
+    Phone Number:
+    <input type="text" id="phone">
+    <span id="phoneError"></span><br>
+
+    Gender:
+    <select id="gender">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select><br>
+
+    College Name:
+    <input type="text" id="college"><br>
+
+    Department:
+    <select id="dept">
+        <option value="">Select Department</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>IT</option>
+    </select><br>
+
+    Year of Study:
+    <select id="year">
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select><br>
+
+    Event Selection:
+    <select id="event">
+        <option value="">Select Event</option>
+        <option>Web Development</option>
+        <option>Hackathon</option>
+        <option>Paper Presentation</option>
+        <option>Quiz</option>
+    </select><br>
+
+    <button type="button" onclick="register()">Register</button>
+    <button type="reset" onclick="clearResult()">Reset</button>
+
+</form>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
